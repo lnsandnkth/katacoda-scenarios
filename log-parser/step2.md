@@ -9,11 +9,14 @@ Switch to the newly created directory
 ```sh
 cd installer
 ```{{copy}}
-Download the installer from Microsoft
+Download the installer from my google drive
 ```sh
-wget https://download.microsoft.com/download/f/f/1/ff1819f9-f702-48a5-bbc7-c9656bc74de8/LogParser.msi
+wget https://drive.google.com/uc?export=download&id=1NrvQF7J1eTnFyvglw6pbMOy-tK56HqWc
 ```{{copy}}
-Install log parser
+This is already the installed log parser
 ```sh
-wine start LogParser.msi
+sudo apt-get install unzip
+unzip "Log Parser 2.2.zip"
+cd "Log Parser 2.2"
+wine start LogParser.exe
 ```{{copy}}
