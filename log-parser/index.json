@@ -1,6 +1,6 @@
 {
-  "title": "Parse your logs with log parser",
-  "description": "This scenario will teach you how to setup log parser to parse your logs into a reusable format",
+  "title": "Parse your logs with microsoft log parser",
+  "description": "This scenario will teach you how to setup microsoft log parser to parse your logs into a reusable format",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
