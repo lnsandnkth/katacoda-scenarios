@@ -1,11 +1,6 @@
 # Setup
-First we need to install wine, in order to run microsoft log parser on ubuntu to parse our logs.
-## Install wine
-install the latest stable wine distribution
+First we need to install lnav
 ```sh
-sudo apt-get install wine64
-```{{copy}}
-install a wine helper script for extra runtime libraries needed to run log parser<br>
-```sh
-sudo apt-get install winetricks
-```{{copy}}
+sudo snap install lnav
+```{{execute}}
+lnav doesn't need any additional setup so we are good to go.

@@ -1,22 +1,19 @@
-# Setup
-Now we install microsoft log parser 2.2
-## Install microsoft log parser
-Create a directory to download the installer to
+# Basic lnav functions
+Now let's have a look at some basic lnav functions.<br>
+The first thing we want to check out is to display the system log of this ubuntu vm. For that we type:
 ```sh
-mkdir installer
-```{{copy}}
-Switch to the newly created directory
+lnav
+```{{execute}}
+```
+This should show you something like this, the live output of your system logs.
+![sys_log.png](../images/sys_log.png)
+To exit, type :q and press enter.<br>
+This is nice and all, but this can be done with built-in ubuntu functions as well, like:
 ```sh
-cd installer
-```{{copy}}
-Download the installer from my google drive
-```sh
-wget https://drive.google.com/uc?export=download&id=1NrvQF7J1eTnFyvglw6pbMOy-tK56HqWc
-```{{copy}}
-This is already the installed log parser
-```sh
-sudo apt-get install unzip
-unzip "Log Parser 2.2.zip"
-cd "Log Parser 2.2"
-wine start LogParser.exe
-```{{copy}}
+tail -f /var/log/syslog
+```{{execute}}
+To exit, press ctrl + c<br>
+
+
+[comment]: <> (cp MFC42u.dll ../../.wine/drive_c/windows/system32)
+[comment]: <> (wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1j_ku3NEkjveyFys7sd6C-SWom-ZvTrzb' -O 'MFC42u.dll')
