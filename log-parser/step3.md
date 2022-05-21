@@ -6,7 +6,7 @@ lnav
 Now press **p** to show what the built-in lnav log parser would parse the current log line to.<br>
 This will look something like this:
 ![./assets/sys_log_parsed.png](sys_log_parsed.png)
-The first line is what got parsed, and beneath known message fields in line 4 we can see the SQLite structure, with a table name and field names for the parsed line.<br>
+The first line is what got parsed, and beneath "known message fields for table" in line 4 we can see the table name and field names for the parsed line.<br>
 We will need those names later to formulate a SQLite query to filter our logs and parse what we get into a format of our choosing.<br>
 Now let's do our first actual parsing of the system log into the csv format, used in excel for example.
 ```sh
