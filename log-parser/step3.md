@@ -6,8 +6,8 @@ lnav
 Now press **p** to show what the built-in lnav log parser would parse the current log line to.<br>
 This will look something like this:
 ![./assets/sys_log_parsed.png](sys_log_parsed.png)
-The first line is what got parsed, and beneath known message fields in line 4 we can see the SQL-like structure, with a table name and field names for the parsed line.<br>
-We will need those names later to formulate a SQL-like query to filter our logs and parse what we get into a format of our choosing.<br>
+The first line is what got parsed, and beneath known message fields in line 4 we can see the SQLite structure, with a table name and field names for the parsed line.<br>
+We will need those names later to formulate a SQLite query to filter our logs and parse what we get into a format of our choosing.<br>
 Now let's do our first actual parsing of the system log into the csv format, used in excel for example.
 ```sh
 lnav -n \
@@ -29,12 +29,12 @@ lnav -n \
 -c ';SELECT log_procname, count(*) AS total FROM syslog_log GROUP BY log_procname ORDER BY total DESC LIMIT 10' \
 ```
 **-c** let's lnav execute the following command.<br>
-The "SQL" statement does a select of the field log_procname which we previously saw as a field name of the log.<br>
+The SQLite statement does a select of the field log_procname which we previously saw as a field name of the log.<br>
 The select groups all process names together and counts how many occurences the processes had in the system log. The statement also orders the processes, highest occurence first.<br>
 ```sh
 -c ':write-csv-to -' \
 ```
-The second command is *:write-csv-to -*, which says what should be done with the selected data, it should print it to standard out in a csv format.<br>
+The second command is *:write-csv-to -*, which says what should be done with the selected data, it should print it to standard out in a csv format, as we gave **-** as a location. You could also give a file.csv to store the parsed data.<br>
 ```sh
 /var/log/syslog
 ```
