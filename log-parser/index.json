@@ -1,7 +1,7 @@
 {
   "title": "View and parse your logs on ubuntu with lnav",
   "description": "This scenario will teach you how to setup lnav to view your logs and parse them into a reusable format",
-  "difficulty": "Beginner",
+  "difficulty": "Intermediate",
   "time": "20 minutes",
   "details": {
     "steps": [
@@ -57,6 +57,7 @@
         "host01": [
           {"file": "sys_log.png", "target": "/usr/local/bin/", "chmod": "+x"},
           {"file": "sys_log_parsed.png", "target": "/usr/local/bin/", "chmod": "+x"}
+          {"file": "sys_log_csv.png", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
       }
     }
