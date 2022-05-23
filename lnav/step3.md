@@ -35,6 +35,7 @@ The select groups all process names together and counts how many occurences the 
 -c ':write-csv-to -' \
 ```
 The second command is *:write-csv-to -*, which says what should be done with the selected data, it should print it to standard out in a csv format, as we gave **-** as a location. You could also give a file.csv to store the parsed data.<br>
+Other formats are *:write-json-to*, *:write-table-to*, *:write-jsonlines-to*, *:write-raw-to*
 ```sh
 /var/log/syslog
 ```

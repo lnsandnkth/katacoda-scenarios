@@ -37,7 +37,8 @@
         "host01": [
           {"file": "sys_log.png", "target": "/usr/local/bin/", "chmod": "+x"},
           {"file": "sys_log_parsed.png", "target": "/usr/local/bin/", "chmod": "+x"},
-          {"file": "sys_log_csv.png", "target": "/usr/local/bin/", "chmod": "+x"}
+          {"file": "sys_log_csv.png", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "csv-workflow.png", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
       }
     }
