@@ -1,6 +1,6 @@
 # View and parse your logs on ubuntu with lnav
 ## Transform your logs into a more manageable format, for analyzing or further processing
-In this tutorial you will learn how to use lnav on ubuntu. <br>
+In this tutorial you will learn how to use lnav on ubuntu. <br><br>
 You will learn:
 - how to view your logs live
 - how to filter through logs with SQLite queries
