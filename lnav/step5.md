@@ -21,12 +21,13 @@ For that we edit the list of cron jobs via:
 ```sh
 crontab -e
 ```{{execute}}
-Choose your favorite editor, for this tutorial I used option 1 though: type **1** and **enter**.
+Choose your favorite editor, for this tutorial I used option 1 though: type **1** and **enter**.<br>
 Now append this line:
 ```sh
 0 3 * * * /root/syslogs_top_10_programs.sh
 ```{{copy}}
 Press **ctrl + x**, then press **y** and then **enter**, to save the changes.<br>
+This created the new cron job, now the ubuntu vm will execute the script everyday at 3am.<br>
 The first 5 variables "0 3 * * *" stand for the time the job should be executed in the format: Minute (0-59), Hour(0-23), Day of Month(1-31), Month(1-12), and Day of Week(Sunday=0-7).<br>
 The rest says where to find the shell script.<br>
 (Note: I couldn't get this cron job running on katacoda, simpler ones worked but not this one, on your local ubuntu install it should work though)

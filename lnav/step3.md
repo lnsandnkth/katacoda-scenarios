@@ -8,6 +8,7 @@ This will look something like this:
 ![./assets/sys_log_parsed.png](sys_log_parsed.png)
 The first line is what got parsed, and beneath "known message fields for table" in line 4 we can see the table name and field names for the parsed line.<br>
 We will need those names later to formulate a SQLite query to filter our logs and parse what we get into a format of our choosing.<br>
+To exit, press **q**<br><br>
 Now let's do our first actual parsing of the system log into the csv format, used in excel for example.
 ```sh
 lnav -n \
@@ -18,7 +19,7 @@ lnav -n \
 This should print out something like this:
 ![sys_log_csv.png](./assets/sys_log_csv.png)
 The statement grouped all different programs together that ran since the vm started, and counted how many times they appeared in the system logs.<br>
-The first line states the field names, beneath is the data.<br>
+The first line states the field names separated by a comma, beneath is the data.<br>
 Having a look at what the statement consists of.<br>
 ```sh
 lnav -n \
