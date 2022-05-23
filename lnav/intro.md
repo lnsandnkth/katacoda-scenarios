@@ -5,7 +5,7 @@ You will learn:
 - how to view your logs live
 - how to filter through logs with SQLite queries
 - how to store the results
-- and finally how to automate that whole process with cron jobs
+- and finally how to automate that whole process with a cron job
 
 ## Motivation:
 Logs can look a bit overwhelming, especially when the logs grow after a few months or years. 
@@ -20,3 +20,10 @@ That is exactly what you are going to learn in this tutorial.
 ## Workflow of the automation
 
 ![csv_workflow.png](./assets/csv_workflow.png)
+
+## Background knowledge
+**lnav**: the tool for parsing our logs<br>
+**ubuntu**: the Operating System(OS) on which we install lnav<br>
+**SQLite**: the query language with which we are filtering our log data<br>
+**csv**: the data/file-format in which we will transform our data to (Microsoft Excel file format)<br>
+**cron job**: a ubuntu functionality that runs assigned commands at a specified time<br>
