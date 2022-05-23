@@ -18,4 +18,4 @@ But, you can also automate that process, by creating a periodically running cron
 That is exactly what you are going to learn in this tutorial.
 
 ## Workflow of the automation
-![csv-workflow.png](./assets/csv-workflow.png)
+![csv-workflow.PNG](./assets/csv-workflow.PNG)
