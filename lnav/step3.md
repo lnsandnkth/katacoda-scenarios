@@ -23,14 +23,14 @@ Having a look at what the statement consists of.<br>
 ```sh
 lnav -n \
 ```
-**-n** let's lnav run in headless mode, meaning it won't display the log viewer UI.<br>
-**\\** let's you type multi-line commands in the shell.<br>
+**-n** lets lnav run in headless mode, meaning it won't display the log viewer UI.<br>
+**\\** lets you type multi-line commands in the shell.<br>
 ```sh
 -c ';SELECT log_procname, count(*) AS total FROM syslog_log GROUP BY log_procname ORDER BY total DESC LIMIT 10' \
 ```
-**-c** let's lnav execute the following command.<br>
-The SQLite statement does a select of the field log_procname which we previously saw as a field name of the log.<br>
-The select groups all process names together and counts how many occurences the processes had in the system log. The statement also orders the processes, highest occurence first.<br>
+**-c** lets lnav execute the following command.<br>
+The SQLite statement does a selection of the field log_procname which we previously saw as a field name of the log.<br>
+The select groups all process names together and counts how many occurrences the processes had in the system log. The statement also orders the processes, highest occurrence first.<br>
 ```sh
 -c ':write-csv-to -' \
 ```

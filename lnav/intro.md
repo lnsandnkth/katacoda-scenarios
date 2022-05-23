@@ -26,4 +26,4 @@ That is exactly what you are going to learn in this tutorial.
 **ubuntu**: the Operating System(OS) on which we install lnav<br>
 **SQLite**: the query language with which we are filtering our log data<br>
 **csv**: the data/file-format in which we will transform our data to (Microsoft Excel file format)<br>
-**cron job**: a ubuntu functionality that runs assigned commands at a specified time<br>
+**cron job**: an ubuntu functionality that runs assigned commands at a specified time<br>

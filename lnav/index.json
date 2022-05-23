@@ -2,7 +2,7 @@
   "title": "View and parse your logs on ubuntu with lnav",
   "description": "This scenario will teach you how to setup lnav to view your logs and parse them into a reusable format",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {

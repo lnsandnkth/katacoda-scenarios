@@ -6,7 +6,7 @@ printf "lnav -n \
     -c ':write-csv-to table.csv' \
     /var/log/syslog" > syslogs_top_10_programs.sh
 ```{{execute}}
-Now let's give the script permsisions so we can run it
+Now let's give the script permissions, so we can run it
 ```sh
 chmod 777 ./syslogs_top_10_programs.sh
 ```{{execute}}
@@ -16,7 +16,7 @@ Now run the script to see if it works.
 ```{{execute}}
 It should have printed the results to the standard out and also created the table.csv file. Check it out in the window above the console, after the view has refreshed.
 <br>
-Now you can reuse that script however you like. But we are gonna create a so called cron job that lets the virtual machine execute that script once every day at 3am.<br>
+Now you can reuse that script however you like. But we are going to create a so called cron job that lets the virtual machine execute that script once every day at 3am.<br>
 For that we edit the list of cron jobs via:
 ```sh
 crontab -e
